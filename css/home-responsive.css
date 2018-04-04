@@ -9,11 +9,27 @@
     nav h1 a {
         font-size: 1em;
     }
+    .filter-options {
+        padding-bottom: 10px;
+    }
+    .filter-options h2 {
+        font-size: 1.2rem;
+    }   
 }
+
 @media screen and (min-width: 625px){
     nav h1 a {
         font-size: 1.2em;
     }
+
+     .filter-options>select{
+        max-width: 334px;
+    }
+}
+@media screen and (min-width: 740px){
+  #restaurants-list li {
+        width: 270px;
+    } 
 }
 
 
@@ -25,9 +41,9 @@
 
 /*LARGE SCREEN MARGINS*/
 
-@media screen and (min-width: 820px){
+@media screen and (min-width: 1600px){
     .container{
-        max-width: 820px;
+        max-width: 1600px;
         margin: 0 auto;
         box-shadow: 8px 5px 5px grey;
     }

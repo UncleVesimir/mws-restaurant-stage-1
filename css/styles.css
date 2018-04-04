@@ -7,11 +7,15 @@ body,td,th,p{
 	color: #333;
 	line-height: 1.5;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 body {
 	background-color: white;
 	margin: 0;
 	position:relative;
-  width: 100%;
+ 
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +41,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	display: block;
 }
 .container{
-  transition: box-shadow 0.8s ease-in;
+  transition: all 0.8s ease-in;
 }
 #main-content {
   background-color: #f3f3f3;
@@ -143,7 +147,7 @@ nav h1 a {
   letter-spacing: 0;
   margin: 10px 0;
   padding: 0 10px;
-  width: calc((100% - 30px)/2);
+  width: calc((100% - 25px)/2);
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -155,6 +159,7 @@ nav h1 a {
   text-align: center;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -164,7 +169,8 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
+  min-width: 180px ;
+  max-width: 540px;
 }
 
 #restaurants-list li:last-of-type {
