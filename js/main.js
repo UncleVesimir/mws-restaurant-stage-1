@@ -10,6 +10,12 @@ var markers = []
 document.addEventListener('DOMContentLoaded', (event) => {
   fetchNeighborhoods();
   fetchCuisines();
+
+  const cSelect = document.getElementById('cuisines-select');
+  const nSelect = document.getElementById('neighborhoods-select');
+
+  cSelect.addEventListener("change", updateRestaurants)
+  nSelect.addEventListener("change", updateRestaurants)
 });
 
 /**
