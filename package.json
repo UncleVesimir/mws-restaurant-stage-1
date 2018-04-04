@@ -1,0 +1,24 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "Udacity Mobile Web Specialist - Project Stage 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -p 8000 -o --cors -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UncleVesimir/mws-restaurant-stage-1.git"
+  },
+  "keywords": [
+    "udacity",
+    "mws"
+  ],
+  "author": "Uncle Vesimir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UncleVesimir/mws-restaurant-stage-1/issues"
+  },
+  "homepage": "https://github.com/UncleVesimir/mws-restaurant-stage-1#readme"
+}
