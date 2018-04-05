@@ -9,6 +9,7 @@ console.log(IMAGE_FOLDER)
 let IMAGE_NAMES;
 let promiseArray = [];
 
+
 const rangeOfImageSizes = ["0.25", "0.5", "1"]
 
 fs.readdir(IMAGE_FOLDER, (err, files)=> {
@@ -34,14 +35,16 @@ IMAGE_NAMES.forEach((image, index) => {
   let filePath = makePathToFile(image);
   let fileExtension = path.extname(filePath);
   let imageFileName = path.basename(filePath, fileExtension);
-  makeMobileImage(filePath, imageFileName, fileExtension)
+  makeImage(filePath, imageFileName, fileExtension, 180, 45);
+  makeImage(filePath, imageFileName, fileExtension, 350, 50);
+  makeImage(filePath, imageFileName, fileExtension, 480, 50);
 })
 }
 
-function makeMobileImage(path, imageFileName, fileExtension){
+function makeImage(path, imageFileName, fileExtension, width, quality){
   jimp.read(path)
     .then( img => {
-      const writePath = `${IMAGE_FOLDER}/jimp_test/${imageFileName}_256w${fileExtension}`
+      const writePath = `${IMAGE_FOLDER}/${imageFileName}_${width}w${fileExtension}`
       img.resize(256, jimp.AUTO)
         .quality(60)
           .write(writePath, logImageComplete.call(null, writePath, imageFileName))

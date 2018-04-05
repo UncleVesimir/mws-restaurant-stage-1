@@ -45,6 +45,9 @@
     .container{
         max-width: 1600px;
         margin: 0 auto;
-        box-shadow: 8px 5px 5px grey;
+        box-shadow: 8px 5px 10px #000;
+    }
+    body {
+        padding: 3vh 0 5vh
     }
 }
