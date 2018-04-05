@@ -169,8 +169,9 @@ nav h1 a {
   min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  min-width: 180px ;
+  min-width: auto;
   max-width: 540px;
+  box-sizing: border-box;
 }
 
 #restaurants-list li:last-of-type {
@@ -182,8 +183,7 @@ nav h1 a {
   display: block;
   margin: 10px 0 0 0;
   max-width: 100%;
-  min-height: 248px;
-  min-width: 100%;
+  min-width: 180px;
 }
 #restaurants-list li h1 {
   color: #f18200;
